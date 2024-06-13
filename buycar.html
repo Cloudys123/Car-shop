@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="logo.png">
+    <title>MVP Automotive | Buy Car</title>
+    <link rel="stylesheet" href="buycar.css">
+</head>
+
+<body class="background">
+
+    <header>
+    </header>
+
+    <div class="editlogo">
+        <img src="logo.png" class="logo" onclick="window.location.href='home.html'">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="buycar.html">Buy Car</a></li>
+            <li><a href="cart.html"><img src="cart.jpg" class="cart-icon"></a></li>
+        </ul>
+    </div>
+    
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-around;">
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="lambo.jpeg" alt="Lamborghini Aventador 2012">
+            <h3 style="color: #fff;">Lamborghini Aventador 2012</h3>
+            <p style="margin: 10px 0; color: #fff;">The 2012 Lamborghini Aventador is an exotic sports car from Italy’s Lamborghini, replacing the Murcielago1. The “Aventador” name comes from a tenacious bull that squared off against bullfighters in the early 1990s1. The LP stands for longitudinale posteriore, which describes the longitudinally mounted rear engine (technically mid-engine) in Italian</p>
+            <p style="color: #f86464;">Price: $390,000</p>
+            
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 11px; cursor: pointer; transition: background-color 0.3s;" 
+            onclick="addToCart('Lamborghini Aventador 2012', 390000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="tesla.jpeg" alt="Tesla Model S">
+            <h3 style="color: #fff;">Tesla Model S</h3>
+            <p style="margin: 10px 0; color: #fff;">Tesla is a US company involved in car manufacturing and energy, best known for its electric cars. The company is also known for specialising in solar panels and Lithium-ion battery energy storage. Pearl White Multi-Coat Paint 19" Tempest Wheels All Black Premium Interior with Ebony Décor Yoke Steering Autopilot 1-Year Premium Connectivity Trial</p>
+            <p style="color: #f86464;">Price: $190,000</p>
+
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 10px; cursor: pointer; transition: background-color 0.3s;" 
+            onclick="addToCart('Tesla Model S', 190000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="bently.JPEG" alt="Bentley Mulsanne Sedan">
+            <h3 style="color: #fff;">Bentley Mulsanne Sedan</h3>
+            <p style="margin: 10px 0; color: #fff;">The Bentley Mulsanne is a flagship luxury sedan. It is powered by a 6.75-liter twin-turbocharged V8 engine that produces 506 horsepower and 752 lb-ft of torque. The car has an eight-speed automatic gearbox and rear-wheel drive. The Mulsanne was produced by Bentley Motors from 1980 until 1992, though derivative models including the Continental T and Azure continued in production into the 2000s.</p>
+            <p style="color: #f86464;">Price: $195,000</p>
+
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 10px; cursor: pointer; transition: background-color 0.3s;" 
+            onclick="addToCart('Bentley Mulsanne Sedan', 195000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="genesis.jpeg" alt="Genesis G90">
+            <h3 style="color: #fff;">Genesis G90</h3>
+            <p style="margin: 10px 0; color: #fff;">The Genesis G90 is a full-size luxury sedan manufactured by the Korean automaker Genesis, the luxury division of Hyundai Motor Company, since 2015. The G90 is the successor of the Hyundai Equus and was known as the Genesis EQ900 in South Korea from 2015 to 2019.  The G90 is available in two trim levels, G90 3.5T AWD and G90 3.5T E-Supercharger AWD, and is powered by a turbocharged 3.5-liter V6 engine paired with an eight-speed automatic transmission and all-wheel drive</p>
+            <p style="color: #f86464;">Price: $110,000</p>
+
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 10px; cursor: pointer; transition: background-color 0.3s;"
+             onclick="addToCart('Genesis G90', 110000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="porsche.jpeg" alt="Porsche 911">
+            <h3 style="color: #fff;">Porsche 911</h3>
+            <p style="margin: 10px 0; color: #fff;">The Porsche 911 is a two-door 2+2 high-performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and all-around independent suspension. It has undergone continuous development, though the basic concept has remained unchanged. The engines were air-cooled until the introduction of the Type 996 in 1999, with newer versions using water-cooled engines.</p>
+            <p style="color: #f86464;">Price: $300,000</p>
+
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 10px; cursor: pointer; transition: background-color 0.3s;" 
+            onclick="addToCart('Porsche 911', 300000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+
+        <div style="box-sizing: border-box; width: 30%; border: 1px solid #000000; margin-bottom: 20px; padding: 20px; background-color: rgb(50, 50, 50); transition: transform 0.3s;" 
+        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)';">
+
+            <img src="ferrari.jpeg" alt="Ferrari 599 GTO">
+            <h3 style="color: #fff;">Ferrari 599 GTO</h3>
+            <p style="margin: 10px 0; color: #fff;">The Ferrari 599 is a grand tourer produced by Ferrari. It was the brand’s two-seat flagship, replacing the 575M Maranello in 2006 as a 2007 model and has a top speed of 208 mph (335 km/h). The GTO stands for Gran Turismo Omologato and it comes with a 6.0-liter V12 engine producing 661 horsepower and 457 lb-ft of torque. The car can accelerate from 0 to 60 mph in just 3.3 seconds.</p>
+            <p style="color: #f86464;">Price: $450,000</p>
+
+            <button style="background-color: #ff0000; color: #fff; border: none; padding: 10px; cursor: pointer; transition: background-color 0.3s;" 
+            onclick="addToCart('Ferrari 599 GTO', 450000)" onmouseover="this.style.backgroundColor='#000'" onmouseout="this.style.backgroundColor='#ff0000'">Add to Cart</button>
+        </div>
+    </div>
+
+    <button style="display: block; margin: 20px auto; background-color: #ff0000; color: #fff; border: none; padding: 10px 20px; cursor: pointer; transition: background-color 0.3s;" onclick="goToCart()">Go to Cart</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

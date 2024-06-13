@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="logo.png">
+    <title>MVP Automotive | Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body class="background">
+
+    <header>
+        <div class="editlogo">
+            <img src="logo.png" class="logo" onclick="window.location.href='home.html'">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="buycar.html">Buy Car</a></li>
+                <li><a href="cart.html"><img src="cart.jpg" class="cart-icon"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
